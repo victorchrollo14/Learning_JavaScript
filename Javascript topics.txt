@@ -1,0 +1,20 @@
+jAVASCRIPT TOPICS 
+
+Beginner concepts
+ 1) Variables and Datatypes
+ 2) comments 
+ 3) Operators - assignment, arithematic, comparison, logical etc.
+ 4) Functions
+ 5) Strings , arrays and objects including methods
+ 6) Dates 
+ 7) Conditionals and loops
+ 8) HTML Dom
+
+advanced concepts
+ 1) Object oriented programming - classes
+ 2) Async 
+ 3) web Api's
+ 4) Js Browser Bom 
+ 5) modules
+ 6) Iterators and generators
+ 7) Memory management

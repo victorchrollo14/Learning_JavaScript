@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background: black;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      color: white;
+    }
+    .programs {
+      margin: 30px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .answer,
+    .answer1 {
+      width: 30%;
+      height: 50px;
+      background: white;
+      color: black;
+      font-weight: bolder;
+    }
+    .input {
+      margin: 0 0 20px 0;
+    }
+  </style>
+  <body>
+    <div class="programs">
+      <h1>conditionals</h1>
+      <h2>1) Program to check if a number is armstrong number or not</h2>
+      <div class="input">
+        <label for="number">Enter a number</label><br />
+        <input type="text" name="number" id="armstrong" />
+        <button type="submit" id="submit">Enter</button>
+      </div>
+      <div class="answer"></div>
+    </div>
+    <hr />
+    <!-- end of armstrong -->
+    <div class="programs">
+      <h2>2) Program to check if a character is a consonant or vowel</h2>
+      <div class="input">
+        <label for="text">Enter a character</label><br />
+        <input type="text" name="character" id="vowel" />
+        <button type="submit" id="submit1">Enter</button>
+      </div>
+      <div class="answer1"></div>
+    </div>
+
+    <script src="conditional-loop.js"></script>
+    <script src="exercises.js"></script>
+  </body>
+</html>
