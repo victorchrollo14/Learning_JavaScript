@@ -19,7 +19,7 @@ myFunction(1, 4);   // calling/invoking a function
 //     📔  You can use the function using the variable name;
 /*     📔  const x = function (a, b){return a+b}; or 
 👇               */
-const x = function add(a, b){ return a+b};
+const x = function (a, b){ return a+b};    // function expression
 
 let y = x(3, 4);      // now x acts as the function
 console.log(y);
@@ -53,7 +53,7 @@ const product = (c, d) => c * d;
 
 const prod = (e, f) => {            
       let value = e*f;
-      return (value);            // need to use 'return' keyword, if statements are not single line.
+      return value;            // need to use 'return' keyword, if statements are not single line.
 }
 
 console.log(product(23, 12));

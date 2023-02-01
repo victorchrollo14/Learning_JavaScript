@@ -1,13 +1,13 @@
 jAVASCRIPT TOPICS 
 
 Beginner concepts
- 1) Variables and Datatypes
- 2) comments 
- 3) Operators - assignment, arithematic, comparison, logical etc.
+ 1) Variables and Datatypes   ☑️
+ 2) comments  ☑️
+ 3) Operators - assignment, arithematic, comparison, logical etc.  ☑️
  4) Functions
  5) Strings , arrays and objects including methods
  6) Dates 
- 7) Conditionals and loops
+ 7) Conditionals and loops  ☑️
  8) HTML Dom
 
 advanced concepts
@@ -18,3 +18,9 @@ advanced concepts
  5) modules
  6) Iterators and generators
  7) Memory management
+
+
+JavaScript Design Patterns
+  1) Object oriented programming
+  2) decorators
+  3) proxy
