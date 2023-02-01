@@ -46,3 +46,4 @@ const pythogoranTriplet = (a, b, c) => {
 
 pythogoranTriplet(4, 8, 12);
 
+

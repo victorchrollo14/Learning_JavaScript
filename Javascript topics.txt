@@ -8,7 +8,7 @@ Beginner concepts
  5) Strings , arrays and objects including methods
  6) Dates 
  7) Conditionals and loops  ☑️
- 8) HTML Dom
+ 8) HTML Dom manipulation
 
 advanced concepts
  1) Object oriented programming - classes
