@@ -20,11 +20,16 @@ console.log(`Reversed integer is: ${reverseGivenInteger(num)}`)
 // challenge 2
 // Write a program to reverse the words in a given string.
 
-const text = "hi, What are you learning currently";
+const text = "'hi' What are you learning currently";
 
 const reverseWords = (text) => {
-    
+    let words = text.split(' ');
+    let reverseWords = words.reverse().join(" ");
+    return reverseWords;
+
 }
+
+console.log(reverseWords(text));
 
 
 
