@@ -64,7 +64,7 @@ for (let entry of entries){
 
 // filter
 let speedFilter = (speed) => {         // returns all the values whose speed >= 100
-     return speed >= 100;
+     return speed < 100;
 }
 const speeds = [121, 123, 142, 160, 200, 54, 78, 321, 200];
 let highSpeed = speeds.filter(speedFilter);
@@ -101,4 +101,42 @@ speeds.forEach(boostSpeed);
 
 // output: [ 221, 223, 242, 260, 300, 154, 178, 421, 300 ]
 console.log(speeds);
+
+// isArray()
+const array = Array.isArray(speeds);
+console.log(array);
+
+// includes()
+if (speeds.includes(221)){
+     console.log(`221 item is present`);
+} else {
+     console.log(`does not exist`);
+}
+
+// from
+let textVal = 'abcdef';
+let textArray = Array.from(textVal);
+console.log(textArray);
+
+// join
+let animalString = animals.join(" ");   // converts array to string but doesnot change the original array. 
+console.log(animalString);                  
+
+// map
+const newHighSpeed = speeds.map(increaseSpeed);
+
+function increaseSpeed(speed){
+     return speed*10;
+}
+
+console.log(newHighSpeed);
+
+// some
+let speedTest = newHighSpeed.some(checkSpeed);
+
+function checkSpeed(speed){
+     return speed < 1000;
+}
+console.log(speedTest);
+
 
