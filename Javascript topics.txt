@@ -9,18 +9,29 @@ Beginner concepts
  6) Dates 
  7) Conditionals and loops  ☑️
  8) HTML Dom manipulation
+ 9) Error handling
 
 advanced concepts
  1) Object oriented programming - classes
  2) Async 
  3) web Api's
  4) Js Browser Bom 
- 5) modules
+ 5) modules and imports/exports
  6) Iterators and generators
  7) Memory management
+ 8) Template literals and destructuring
+ 
 
 
 JavaScript Design Patterns
   1) Object oriented programming
   2) decorators
   3) proxy
+
+
+
+
+
+
+
+

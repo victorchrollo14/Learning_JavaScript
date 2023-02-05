@@ -35,6 +35,56 @@ const reverseWords = (text) => {
 console.log(reverseWords(text));
 
 
+// challenge 3
+// Write a function which can convert the time input given in 12 hours format to 24 hours format 
+const timeTo24 = (time) => {
+    
+
+}
+
+
+
+
+
+
+
+// challenge 4
+//   Write a function which accepts a string argument and returns the count of characters between the first and last character 'X'
+
+
+// challenge 5
+//  Write a function to truncate a string to a certain number of words
+
+
+// challenge 6
+// Create a regular expression to validate if the given input is valid Indian mobile number or not
+
+
+// challenge 7 
+// Write a function which accepts two valid dates and returns the difference between them as number of days
+
+
+// challenge 8
+//   Write a function to check if an object is empty or not in javaScript?
+
+
+// challenge 9
+//  Write a function to remove array element based on object property?
+
+
+// challenge 10
+// Function which returns a random number in the given range
+
+function randomNumber(max, min){
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+let random = randomNumber(-555, 100);
+console.log(random);
+
+
+
+
 
 
 
