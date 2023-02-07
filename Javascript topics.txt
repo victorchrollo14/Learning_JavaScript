@@ -4,7 +4,7 @@ Beginner concepts
  1) Variables and Datatypes   ☑️
  2) comments  ☑️
  3) Operators - assignment, arithematic, comparison, logical etc.  ☑️
- 4) Functions
+ 4) Functions and parameters 
  5) Strings , arrays and objects including methods
  6) Dates 
  7) Conditionals and loops  ☑️

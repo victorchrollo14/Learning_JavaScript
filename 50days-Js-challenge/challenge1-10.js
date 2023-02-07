@@ -14,7 +14,7 @@ function reverseGivenInteger(num) {
     return Number(revNum);
 }
 // output: 2001
-console.log(`Reversed integer is: ${reverseGivenInteger(num)}`)
+console.log(`Reversed integer is: \n${reverseGivenInteger(num)}`)
 
 
 // challenge 2
@@ -32,15 +32,25 @@ const reverseWords = (text) => {
     return revWordString;
 }
 // output: 'ih' tahW era uoy gninrael yltnerruc
-console.log(reverseWords(text));
+console.log(`The reversed string is \n${reverseWords(text)}`);
 
 
 // challenge 3
 // Write a function which can convert the time input given in 12 hours format to 24 hours format 
 const timeTo24 = (time) => {
-    
+    if (time.includes('AM')){
+        return time;
+    }
+    else {
+        let arr = time.split(':');
+        let formattedTime = `${12 + Number(arr[0])}:${arr[1]}:${arr[2].slice(0, 2)} PM`;
+        return formattedTime;
+    }
 
 }
+
+let cTime = new Date().toLocaleTimeString();
+console.log(`Time converted to 24 hour format: \n${timeTo24(cTime)}`);
 
 
 
@@ -80,7 +90,9 @@ function randomNumber(max, min){
 }
 
 let random = randomNumber(-555, 100);
-console.log(random);
+
+// output: some random number.
+console.log(`random number between -155 and 100: \n${random}`);
 
 
 
