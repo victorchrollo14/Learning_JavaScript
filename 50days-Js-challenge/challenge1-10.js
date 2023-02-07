@@ -6,10 +6,10 @@ let temp = 0; revNum = '';
 
 function reverseGivenInteger(num) {
     // write your solution here
-    while (num !== 0){
+    while (num !== 0) {
         temp = num % 10;
         revNum += temp;
-        num = Math.floor(num/10);
+        num = Math.floor(num / 10);
     }
     return Number(revNum);
 }
@@ -38,23 +38,22 @@ console.log(`The reversed string is \n${reverseWords(text)}`);
 // challenge 3
 // Write a function which can convert the time input given in 12 hours format to 24 hours format 
 const timeTo24 = (time) => {
-    if (time.includes('AM')){
+    if (time.includes('AM')) {
         return time;
     }
     else {
         let arr = time.split(':');
-        let formattedTime = `${12 + Number(arr[0])}:${arr[1]}:${arr[2].slice(0, 2)} PM`;
+        let formattedTime =
+            `${12 + Number(arr[0])}:${arr[1]}:${arr[2].slice(0, 2)} PM`;
         return formattedTime;
     }
 
 }
 
+// time input in 12hour format
 let cTime = new Date().toLocaleTimeString();
-console.log(`Time converted to 24 hour format: \n${timeTo24(cTime)}`);
-
-
-
-
+console.log(`Time converted to 24 hour format: 
+             \n${timeTo24(cTime)}`);
 
 
 
@@ -85,7 +84,7 @@ console.log(`Time converted to 24 hour format: \n${timeTo24(cTime)}`);
 // challenge 10
 // Function which returns a random number in the given range
 
-function randomNumber(max, min){
+function randomNumber(max, min) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 

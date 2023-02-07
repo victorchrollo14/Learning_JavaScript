@@ -19,7 +19,7 @@ myFunction(1, 4);   // calling/invoking a function
 //     📔  You can use the function using the variable name;
 /*     📔  const x = function (a, b){return a+b}; or 
 👇               */
-const x = function (a, b){ return a+b};    // function expression
+const x = function add(a, b){ return a+b};    // function expression
 
 let y = x(3, 4);      // now x acts as the function
 console.log(y);
@@ -96,3 +96,4 @@ function maxNum(){
 
 let maxVal = maxNum(12, 10, 78, 1, 69, 23, 18, 2, 90);
 console.log(`max value: ${maxVal}`);
+

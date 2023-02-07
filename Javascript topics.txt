@@ -6,7 +6,7 @@ Beginner concepts
  3) Operators - assignment, arithematic, comparison, logical etc.  ☑️
  4) Functions and parameters 
  5) Strings , arrays and objects including methods
- 6) Dates 
+ 6) Dates ☑️
  7) Conditionals and loops  ☑️
  8) HTML Dom manipulation
  9) Error handling
