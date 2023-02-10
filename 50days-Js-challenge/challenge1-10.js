@@ -83,7 +83,6 @@ console.log(`Time converted to 24 hour format:
 
 // challenge 10
 // Function which returns a random number in the given range
-
 function randomNumber(max, min) {
     return Math.floor(Math.random() * (max - min)) + min;
 }

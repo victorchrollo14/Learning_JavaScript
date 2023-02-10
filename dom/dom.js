@@ -30,12 +30,18 @@ heading.style.color = "red";
 
 
 // events and eventListners
-// most common events - click, mouseover, keydown
+// most common events - click, dblclick.
+// mouseover, mouseout, 
+// keydown, keyup, 
+// onload, onchange, onblur, onfocus
+// onselect, onresize, onscroll, oninput
 
 
 // Tree traversal methods
-// children, childNodes, firstChild, firstElementChild, 
-// lastElementChild, lastChild, nextElementSibling, previousElementSibling
+// children, childNodes, firstChild, firstElementChild, childElementCount.
+// lastElementChild, lastChild, nextElementSibling, previousElementSibling, createElement
+// removeChild, appendChild, insertBefore(), remove()
+// old.replaceWith(new), replaceChildren 
 
 
 const main = document.querySelector('.main');
@@ -84,3 +90,23 @@ newChild.innerHTML = "New child";                       // adds a new child
 main.appendChild(newChild);
 
 main.removeChild(newChild);                     // removes a child element;
+
+
+
+// Collections
+const divsCollections = document.getElementsByTagName('div');
+
+lastChildEle.addEventListener('mouseover', (e) => {
+    for (let i = 0; i<= divsCollections.length-1; i++){
+        divsCollections[i].style.border = "solid 2px black";
+    }
+    
+})
+
+lastChildEle.addEventListener('mouseout', (e) =>{
+    for (let i = 0; i<= divsCollections.length-1; i++){
+        divsCollections[i].style.border = "initial";
+    }
+})
+
+console.log(divsCollections);
