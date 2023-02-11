@@ -82,4 +82,20 @@ let vilasAvg = marks.average.bind(vilasMarks);
 console.log(vilasTotal(), vilasAvg());
 
 // closures
+// closures are used to make Global variables local.
+
+function myFunction(){
+    a = 10;
+}
+myFunction();
+console.log(a*a);
+
+const add = (function () {
+    let counter = 0;
+    return function () {counter += 1; return counter}
+  })();
+  
+  console.log(add());
+  console.log(add());
+  console.log(add());
 
