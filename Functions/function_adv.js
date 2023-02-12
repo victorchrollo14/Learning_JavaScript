@@ -13,7 +13,7 @@ const myObject = {
 
 console.log(myObject.fullName());
 
-// this is a function constructor
+// this is a function constructor - a function that initializes a constructor
 function Cat(name, color){
     this.name = name;
     this.color = color;
@@ -99,3 +99,64 @@ const add = (function () {
   console.log(add());
   console.log(add());
 
+// this keyword
+// It refers to an object.
+// It refers to different objects depending on how it is used.
+
+// Precedence	    Object
+//  1	            bind()
+//  2	            apply() and call()
+//  3	            Object method
+//  4 	            Global scope
+
+
+const fruits = {
+    apple: 0,
+    mango: 87,
+    orange: 32,
+    total: function(){
+        // return this.apple + this.mango + this.orange;
+        return this;                                              // refers to the fruits object.
+    }
+}
+
+console.log(fruits.total());
+
+
+// when used alone, refers to global object ie window object.
+let x = this;
+console.log(x.document.body);
+
+"use strict";
+let y = this;
+console.log(y);                // even in strict mode, this still returns window object.
+
+
+// this in a function 
+function Name(){
+    return this;
+}
+
+console.log(Name())                   // still refers to global object
+
+"use strict";
+function newName(){
+    console.log(this);
+}
+
+newName();
+
+
+// new keyword
+// The new operator lets developers create an instance of a user-defined object type 
+// or of one of the built-in object types that has a constructor function.
+
+function Car(make, model, year){
+    this.make = make;
+    this.model = model;
+    this.year = year;
+}
+
+const car1 = new Car("Hawkeye", "Kimimaru96", "1991");        // creating a new instance of Car() object.
+
+console.log(car1);
