@@ -4,22 +4,23 @@ Beginner concepts
  1) Variables and Datatypes   ☑️
  2) comments  ☑️
  3) Operators - assignment, arithematic, comparison, logical etc.  ☑️
- 4) Functions and parameters 
- 5) Strings , arrays and objects including methods
+ 4) Functions and parameters ☑️
+ 5) Strings , arrays methods ☑️
  6) Dates ☑️
  7) Conditionals and loops  ☑️
- 8) HTML Dom manipulation
- 9) Error handling
+ 8) HTML Dom manipulation   ☑️
+ 9) Error handling          ☑️
+ 10) Objects and object methods.
 
 advanced concepts
- 1) Object oriented programming - classes
- 2) Async 
- 3) web Api's
+ 1) Object oriented programming - classes 
+ 2) Async - callbacks, promises, setTimeOut, setTimeInterval
+ 3) web Api's - XMLHttpRequest, fetch();
  4) Js Browser Bom 
  5) modules and imports/exports
  6) Iterators and generators
  7) Memory management
- 8) Template literals and destructuring
+ 8) Template literals and destructuring    ☑️
  
 
 
@@ -27,6 +28,13 @@ JavaScript Design Patterns
   1) Object oriented programming
   2) decorators
   3) proxy
+
+
+Learning React
+1) crash course.
+2) docs and roadmap
+3) Build 10-mini projects.
+4) start building large Projects.
 
 
 
