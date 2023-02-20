@@ -37,7 +37,10 @@ Learning React
 4) start building large Projects.
 
 
-
+FullStack
+1) React.js and next.js   - advanced.
+2) Django & Django restframework, graphql.   - Intermediate level
+3) MySQL and MongoDB    
 
 
 
