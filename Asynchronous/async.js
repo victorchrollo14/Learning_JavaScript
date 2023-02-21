@@ -1,5 +1,6 @@
 // // Asychronous JavaScript
 
+
 // // callback functions - a Function that is passed as an argument to another function
 // //                      which is called after the function is executed.
 
@@ -102,13 +103,13 @@
 //     }
 // )
 
-const fetchPromise = fetch('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
+// const fetchPromise = fetch('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
 
-// error link
-// const fetchPromise = fetch('bad-scheme://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
+// // error link
+// // const fetchPromise = fetch('bad-scheme://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
 
 
-console.log(fetchPromise);
+// console.log(fetchPromise);
 
 // Using Promises
 // fetchPromise.then((response) => {
@@ -124,34 +125,97 @@ console.log(fetchPromise);
 
 
 // chaining promises and throwing errors and catching errors.
-fetchPromise.then((response) => {
-    if(!response.ok){
-        throw new Error(`Http error: ${response.status}`);
-    }
-    return response.json()
-}).then((data) => {
-    console.log(data[0].name);
-}).catch((error) => {
-    console.log(`could not get Product: ${error}`)
-});
+// fetchPromise.then((response) => {
+//     if(!response.ok){
+//         throw new Error(`Http error: ${response.status}`);
+//     }
+//     return response.json()
+// }).then((data) => {
+//     console.log(data[0].name);
+// }).catch((error) => {
+//     console.log(`could not get Product: ${error}`)
+// });
 
-console.log("Started request…");
+// console.log("Started request…");
 
 
 // Combining promises 
 // Sometimes we need to fullfill all the promises, but they don't depend on each other.
 // We can use promises.all() - It takes an array of promises and returns 
-const fetchPromise1 = fetch('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
-const fetchPromise2 = fetch('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/not-found');
-const fetchPromise3 = fetch('https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json');
+// const fetchPromise1 = fetch('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
+// const fetchPromise2 = fetch('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/not-found');
+// const fetchPromise3 = fetch('https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json');
 
-Promise.all([fetchPromise1, fetchPromise2, fetchPromise3])
-  .then((responses) => {
-    for (const response of responses) {
-      console.log(`${response.url}: ${response.status}`);
+// Promise.all([fetchPromise1, fetchPromise2, fetchPromise3])
+//   .then((responses) => {
+//     for (const response of responses) {
+//       console.log(`${response.url}: ${response.status}`);
+//     }
+//   })
+//   .catch((error) => {
+//     console.error(`Failed to fetch: ${error}`)
+//   });
+
+
+
+//Async and Await keyword 
+//   1️⃣  They make it easier to write promises in Javascript.
+//   2️⃣  async makes a function return a promise.
+//   3️⃣  await makes a function wait for a promise.
+
+
+// async function show(){
+//   let promise = new Promise((resolve, reject) => {
+//     resolve("it's working");
+//   });
+//   document.getElementById('demo').innerHTML = await promise;
+// }
+
+// show();
+
+
+function makeRequest(location){
+  return new Promise((resolve, reject) => {
+    console.log(`making request to location: ${location}`);
+    if (location === 'google'){
+       resolve('google says hi');
     }
-  })
-  .catch((error) => {
-    console.error(`Failed to fetch: ${error}`)
+    else {
+      reject('we can only talk to google');
+    }
   });
+}
 
+function processRequest(response){
+   return new Promise((resolve, reject) => {
+    console.log('processing requests');
+    resolve(`Extra Info + ${response}`);
+   })
+}
+
+// makeRequest('google').then((response) => {
+//   console.log("Response recieved");
+//   return processRequest(response);
+// }).then(returnedRequest => {
+//   console.log(returnedRequest);
+// }).catch(error => {
+//    console.log(error);
+// })
+
+// ☝️ writing promises using async and await
+
+async function procesStuff(){
+  try{
+
+      const response = await makeRequest('FaceBook');
+      console.log("request Recieved");
+      const processResponse = await processRequest(response);
+      console.log(processResponse);
+  } 
+  catch(error){
+      console.log(error);
+  }
+   
+}
+
+procesStuff();
