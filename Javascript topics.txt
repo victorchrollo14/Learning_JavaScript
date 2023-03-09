@@ -5,7 +5,7 @@ Beginner concepts
  2) comments  ☑️
  3) Operators - assignment, arithematic, comparison, logical etc.  ☑️
  4) Functions and parameters ☑️
- 5) Strings , arrays methods ☑️
+ 5) Strings, arrays methods ☑️
  6) Dates ☑️
  7) Conditionals and loops  ☑️
  8) HTML Dom manipulation   ☑️
@@ -14,10 +14,10 @@ Beginner concepts
 
 advanced concepts
  1) Object oriented programming - classes 
- 2) Async - callbacks, promises, setTimeOut, setTimeInterval
- 3) web Api's - XMLHttpRequest, fetch();
+ 2) Async - callbacks, promises, setTimeOut, setTimeInterval ☑️
+ 3) web Api's - XMLHttpRequest, fetch();   ☑️
  4) Js Browser Bom 
- 5) modules and imports/exports
+ 5) modules and imports/exports  ☑️
  6) Iterators and generators
  7) Memory management
  8) Template literals and destructuring    ☑️
@@ -41,6 +41,7 @@ FullStack
 1) React.js and next.js   - advanced.
 2) Django & Django restframework, graphql.   - Intermediate level
 3) MySQL and MongoDB    
+
 
 
 
